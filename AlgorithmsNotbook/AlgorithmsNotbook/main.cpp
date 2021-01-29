@@ -15,5 +15,8 @@ int main(int argc, const char * argv[]) {
 //    searchX();
 //    drawSquare();
 //    dateDifference();
+//    digitConvert();
+//    palindromeString();
+    reverseSentence();
     return 0;
 }

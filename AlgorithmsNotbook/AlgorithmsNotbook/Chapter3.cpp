@@ -8,7 +8,7 @@
 #include "Chapter3.hpp"
 #include <iostream>
 #include <string>
-#include <sstream>
+#include <string.h>
 using namespace std;
 
 #pragma mark - 卡拉兹猜想
@@ -65,6 +65,7 @@ void wajueji(){
     }
     cout<<schoolID<<" "<<scores<<endl;
 }
+
 #pragma mark - 找x
 void searchX(){
     cout<<"找x"<<endl;
@@ -85,6 +86,7 @@ void searchX(){
     }
     cout<<result<<endl;
 }
+
 #pragma mark - 画正方形
 void drawSquare(){
     cout<<"画正方形"<<endl;
@@ -112,6 +114,7 @@ void drawSquare(){
         cout<<C<<endl;
     }
 }
+
 #pragma mark - 日期处理
 bool isLeap(int year){
     return (year % 4== 0 && year % 100 != 0)|| (year % 400 == 0);
@@ -124,7 +127,7 @@ void dateDifference(){
     int firstDate;
     int secondDate;
     int days = 1;
-//    while ((cin>>firstDate>>secondDate) != EOF){   //从文件读多组数据
+    //    while (cin>>firstDate>>secondDate){   //从文件读多组数据
     cin>>firstDate>>secondDate;
     if (firstDate > secondDate) {
         int tmp = firstDate;
@@ -149,7 +152,65 @@ void dateDifference(){
             firstMonth = 1;
         }
     }
-//    }                                              //从文件读多组数据
+    //    }                                              //从文件读多组数据
     cout<<days<<endl;
 }
 
+#pragma mark - 进制转换
+void digitConvert(){
+    cout<<"进制转换"<<endl;
+    int A;
+    int B;
+    int D;
+    cin>>A>>B>>D;
+    int sum = A + B;
+    int result[31];
+    int num = 0;
+    do {
+        result[num] = sum % D;
+        num++;
+        sum = sum / D;
+    }while (sum);
+    for (int i = num -1; i >= 0; i--) {
+        cout<<result[i];
+    }
+    cout<<endl;
+}
+
+#pragma mark - 回文串
+void palindromeString(){
+    cout<<"回文串"<<endl;
+    string input;
+    cin>>input;
+    int lenght = (int)input.length();
+    bool isPalindrome = true;
+    for (int i = 0; i <lenght/2;i++) {
+        if (input[i] != input[lenght - i - 1]) {
+            isPalindrome = false;
+            break;
+        }
+    }
+    if (isPalindrome) {
+        cout<<"YES"<<endl;
+    }else{
+        cout<<"NO"<<endl;
+    }
+}
+
+#pragma mark - 说反话
+void reverseSentence(){
+    cout<<"说反话"<<endl;
+    string words[20];
+    int index = 0;
+    string input;
+    while (cin>>input) {
+        words[index] = input;
+        index++;
+        if(getchar() == '\n')//文件输入不用判断是否回车
+            break;
+    }
+    for (int i = index-1; i >= 0; i--) {
+        cout<<words[i]<<" ";
+    }
+    cout<<endl;
+}

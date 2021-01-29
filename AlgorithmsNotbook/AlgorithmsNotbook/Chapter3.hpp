@@ -21,3 +21,9 @@ void searchX();//找x
 void drawSquare();//画正方形
 
 void dateDifference();//日期求差
+
+void digitConvert();//进制转换
+
+void palindromeString();//回文串
+
+void reverseSentence();//说反话

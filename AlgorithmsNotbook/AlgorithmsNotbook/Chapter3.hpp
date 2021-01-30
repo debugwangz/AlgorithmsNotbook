@@ -9,9 +9,6 @@
 #define Chapter3_hpp
 
 #include <stdio.h>
-
-#endif /* Chapter3_hpp */
-
 void callatz();//卡拉兹猜想
 
 void wajueji();//挖掘机
@@ -27,3 +24,7 @@ void digitConvert();//进制转换
 void palindromeString();//回文串
 
 void reverseSentence();//说反话
+
+void mainInC3();
+
+#endif /* Chapter3_hpp */

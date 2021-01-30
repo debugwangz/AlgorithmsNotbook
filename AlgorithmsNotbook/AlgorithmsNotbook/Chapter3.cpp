@@ -11,6 +11,17 @@
 #include <string.h>
 using namespace std;
 
+void mainInC3(){
+    //    callatz();
+    //    wajueji();
+    //    searchX();
+    //    drawSquare();
+    //    dateDifference();
+    //    digitConvert();
+    //    palindromeString();
+    //    reverseSentence();
+}
+
 #pragma mark - 卡拉兹猜想
 bool isEvenNumber(int number);
 int callatz(int input);

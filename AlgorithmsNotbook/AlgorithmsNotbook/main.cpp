@@ -7,16 +7,11 @@
 
 #include <iostream>
 #include "Chapter3.hpp"
+#include "Chapter4.hpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-//    callatz();
-//    wajueji();
-//    searchX();
-//    drawSquare();
-//    dateDifference();
-//    digitConvert();
-//    palindromeString();
-    reverseSentence();
+//    mainInC3();
+    mainInC4();
     return 0;
 }

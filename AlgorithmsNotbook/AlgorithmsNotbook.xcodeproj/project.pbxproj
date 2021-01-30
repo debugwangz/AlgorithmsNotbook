@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF9633B525C52D7F00E02313 /* Chapter4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF9633B325C52D7F00E02313 /* Chapter4.cpp */; };
 		BFC5F9B025C283350031D866 /* Chapter3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFC5F9AE25C283350031D866 /* Chapter3.cpp */; };
 		BFFE5FF425C14C570047FC2B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFE5FF325C14C570047FC2B /* main.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF9633B325C52D7F00E02313 /* Chapter4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter4.cpp; sourceTree = "<group>"; };
+		BF9633B425C52D7F00E02313 /* Chapter4.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Chapter4.hpp; sourceTree = "<group>"; };
+		BF9633BE25C5535400E02313 /* PATRanking.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PATRanking.txt; sourceTree = "<group>"; };
 		BFC5F9AE25C283350031D866 /* Chapter3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Chapter3.cpp; sourceTree = "<group>"; };
 		BFC5F9AF25C283350031D866 /* Chapter3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Chapter3.hpp; sourceTree = "<group>"; };
 		BFFE5FF025C14C570047FC2B /* AlgorithmsNotbook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsNotbook; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF9633B825C5515D00E02313 /* inputs */ = {
+			isa = PBXGroup;
+			children = (
+				BF9633BE25C5535400E02313 /* PATRanking.txt */,
+			);
+			path = inputs;
+			sourceTree = "<group>";
+		};
 		BFFE5FE725C14C570047FC2B = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +72,10 @@
 		BFFE5FF225C14C570047FC2B /* AlgorithmsNotbook */ = {
 			isa = PBXGroup;
 			children = (
+				BF9633B825C5515D00E02313 /* inputs */,
 				BFFE5FF325C14C570047FC2B /* main.cpp */,
+				BF9633B425C52D7F00E02313 /* Chapter4.hpp */,
+				BF9633B325C52D7F00E02313 /* Chapter4.cpp */,
 				BFC5F9AF25C283350031D866 /* Chapter3.hpp */,
 				BFC5F9AE25C283350031D866 /* Chapter3.cpp */,
 			);
@@ -123,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9633B525C52D7F00E02313 /* Chapter4.cpp in Sources */,
 				BFFE5FF425C14C570047FC2B /* main.cpp in Sources */,
 				BFC5F9B025C283350031D866 /* Chapter3.cpp in Sources */,
 			);
